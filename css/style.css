@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+background: linear-gradient(to top,#fd79a8,#4834d4);
+
+}
+.page-title {
+    padding: 10px;
+}
+.page-title h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.insert-box {
+/*    background: linear-gradient(to top,#fd79a8,#4834d4);*/
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.9);
+    display: inline-block;
+    text-align: center;
+    
+}
+.box input {
+    border: none;
+    padding: 5px 20px;
+    width: 200px;
+    background: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    background:#eee;
+    margin: 5px 0px;
+    outline: none;
+    border: 1px solid #eee;
+}
+
+.box .disciption-box textarea {
+    background: none;
+    width: 400px;
+    height: 150px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #21f123;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 5px;
+    background: #eee;
+    outline: none;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box input[type="file"] {
+    z-index: -1;
+    display: none;
+}
+
+.img-box img {
+    width: 100px;
+    margin: 0px 10px;
+}
+
+.img-box label {
+    background: #4cd137;
+    padding: 10px 40px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+    font-weight: 400;
+    background: linear-gradient(50deg,#fd79a8,#4834d4);
+}
+
+.btn-box {
+padding: 20px 0px;
+}
+
+.btn-box input[type="submit"] {
+  
+    background: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px 30px;
+    background: #26de81;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #26de81;
+    background: linear-gradient(50deg,#fd79a8,#4834d4);
+    border: 1px solid red;
+    border: none;
+
+}
+@media(max-width:414px){
+    .input{
+        display: flex;
+        margin: 5px 0px;
+        justify-content: center;
+    }
+    .box input{
+        margin: 5px 2px;
+    }
+    .box .disciption-box textarea{
+        width: 300px;
+    }
+    .box input {
+        width: 150px;
+    }
+}
