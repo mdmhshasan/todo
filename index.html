@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo apps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+        }
+
+        .user-box ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .user-box {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .menu-box {
+            width: 150px;
+            height: 200px;
+            box-shadow: 0 0 20px #bbb;
+            background: #e9dfdf;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin: 20px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            cursor: pointer;
+            background: #f5f5f7;
+        }
+        .menu-box h1>span {
+            font-size: 50px;
+            font-weight: 900;
+            color: #000;
+            text-align: center;
+        }
+
+        .menu-box a {
+            font-feature-settings: normal;
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: bolder;
+            text-shadow: 0 0 5px #333;
+        }
+
+        .main-menu img {
+            width: 100%;
+            height: auto;
+            filter:saturate(1.5);
+            background: #ffe2e2;
+            filter: invert(1);
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="main-menu">
+            <div class="user-img">
+                <img class="user" src="upload-img/welcome%20(2).png" />
+            </div>
+            <div class="user-box">
+                <div class="menu-box">
+                    <h1><span><i class="fas fa-user-circle"></i></span></h1>
+                    <a href="#">profile</a>
+                </div>
+                <div class="menu-box">
+                    <h1><span><i class="fab fa-elementor"></i></span></h1>
+                    <a href="#">all-events</a>
+                </div>
+                <div class="menu-box">
+                    <h1><span><i class="fas fa-plus-square"></i></span></h1>
+                    <a href="#">add-events</a>
+                </div>
+                <div class="menu-box">
+                    <h1><span><i class="fas fa-images"></i></span></h1>
+                    <a href="#">gellary</a>
+                </div>
+                <div class="menu-box">
+                    <h1><span><i class="fas fa-cogs"></i></span></h1>
+                    <a href="#">satting</a>
+                </div>
+                <div class="menu-box">
+                    <h1><span><i class="fas fa-question-circle"></i></span></h1>
+                    <a href="#">more-info</a>
+                </div>
+            </div>
+        </div>
+        <input type="text">
+        <p></p>
+    </header>
+    <script>
+        var menuBox = document.querySelectorAll(".menu-box");
+        for (var i = 0; i < menuBox.length; i++) {
+            menuBox[0].addEventListener("click", box1);
+            menuBox[1].addEventListener("click", box2);
+            menuBox[2].addEventListener("click", box3);
+            menuBox[3].addEventListener("click", box4);
+            menuBox[4].addEventListener("click", box5);
+            menuBox[5].addEventListener("click", box6);
+        }
+
+        function box1(e) {
+            e.preventDefault();
+            console.log("hello 1");
+        }
+
+        function box2(e) {
+            e.preventDefault();
+            console.log("helo 2");
+        }
+
+        function box3(e) {
+            e.preventDefault();
+            console.log("helo 3");
+        }
+
+        function box4(e) {
+            e.preventDefault();
+            console.log("helo 4");
+        }
+
+        function box5(e) {
+            e.preventDefault();
+            console.log("helo 5");
+        }
+
+        function box6(e) {
+            e.preventDefault();
+            console.log("hello6");
+       
+        }
+//      localstorage start here
+        function InsertData(){}
+        function ReadData(){}
+        function UpdateData(){}
+        function DeleteData(){}
+    </script>
+</body>
+
+</html>
