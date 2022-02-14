@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user profie</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .profile-box {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(95deg, lightpink, lightpink);
+        }
+
+        .p-image {
+            text-align: center;
+            background: none;
+            ;
+        }
+
+        .p-image img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-top: 10px;
+            filter: drop-shadow(2px 4px 6px #bbb);
+            border: 20px solid lightpink;
+        }
+
+        .username>h3 {
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+            padding: 20px 0px;
+        }
+
+        .p-menu {
+            padding: 10px 0px;
+        }
+
+        .p-menu ul {
+            padding: 0;
+        }
+
+        .p-menu ul li {
+            list-style: none;
+            padding: 10px 0px;
+            line-height: 30px;
+            background: lightpink;
+            margin: 10px;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rosybrown;
+            cursor: pointer;
+        }
+
+        .p-menu ul li a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            text-align: left;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-left: 40px;
+        }
+
+        .p-discuption {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .p-discuption p {
+            font-size: 16px;
+            color: #1e2c38;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 25px;
+            padding-bottom: 10px;
+        }
+
+        .p-image h2 {
+            position: absolute;
+            margin: 5px;
+            font-size: 3rem;
+            color: #000;
+            text-align: center;
+            display: block;
+            cursor: pointer;
+        }
+
+        .p-menu ul li a ion-icon {
+            vertical-align: middle;
+            font-size: 35px;
+            color: palevioletred;
+            font-weight: bold;
+        }
+         .p-menu ul li a i{
+            vertical-align: middle;
+            font-size: 35px;
+            color: palevioletred;
+            font-weight: bold;
+        }
+        mark{
+                background-color:aliceblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-box">
+        <div class="p-image">
+            <h2>
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </h2>
+            <img src="upload-img/freelancer%20nasim.jpg" alt="profile" />
+            <div class="username">
+                <h3><mark>MD:HAFIJUR TOHA,</mark></h3>
+            </div>
+        </div>
+        <div class="p-menu">
+            <ul>
+                <li><a href="#">
+                        <ion-icon name="person-circle-outline"></ion-icon> personal info
+                    </a></li>
+                <li><a href="#"><i class="fa fa-lock"></i>privecy</a></li>
+                <li><a href="#"><ion-icon name="logo-xbox"></ion-icon>terms & cundetion</a></li>
+                <li><a href="#"><ion-icon name="log-out-outline"></ion-icon>logout</a></li>
+            </ul>
+        </div>
+        <div class="p-discuption">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate exercitationem est consequatur, suscipit ex, non perspiciatis aliquam incidunt quibusdam, necessitatibus, maiores perferendis aliquid quis magni dolorum culpa. Odio, neque, fugiat!</p>
+        </div>
+    </div>
+</body>
+
+</html>
